@@ -11,7 +11,7 @@ using namespace std;
 //      2.Parametarized Constructor
 //      3.Copy Constructor
 //IMPORTANT-
-//      Constructor Do Not have any Types
+//      Destructor Do Not have any Types
 ///////////////////////////////////////////////////////////////////////////
  
 class Demo
