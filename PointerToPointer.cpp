@@ -22,7 +22,7 @@ int main()
     cout<<"Size of Pointer:"<<sizeof(p)<<"\n";      //Expected output:4 / 8  ........The size of pointer varries from compilor to compilor....
                                                    //my compilor  is 32 bit so size of pointer  is 4 bytes........
                                                   //if your compiler is 64 bit it can give 8 bytes
-    cout<<"Value of No="<<*pt<<"\n";             //Expected output: 2
+    cout<<"Value of No="<<*pt<<"\n";             //Expected output: 20
     cout<<"Value of No="<<**q<<"\n";            //Expected output: 20
     cout<<"Value of No="<<***r<<"\n";          //Expected output: 20
     cout<<"Value of No="<<****s<<"\n";        //Expected output: 20
