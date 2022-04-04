@@ -32,7 +32,7 @@ int main()
         }
     
     
-    delete []ptr;           //As there is free function in c programming in cpp there is delete function 
+    delete []ptr;            //As there is free function in c programming in cpp there is delete function 
                            //which is used to deallocate the allocated memory
     
     return 0;
