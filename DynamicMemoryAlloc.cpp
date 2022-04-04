@@ -14,10 +14,11 @@ int main()
     int *ptr=NULL;  // initializing ptr to NULL
     cout<<"Enter the Size of Array"<<"\n";
     cin>>Size;
-    int iArr[Size];         //Declaration of Array...
+    int iArr[Size];           //Declaration of Array...
 
-    ptr=new int[Size]; //As there is Malloc function in c programming in cpp there is new function 
-                           //which is used to allocate memory..... //Crogramming syntax for same operation "ptr=(int*)malloc(sizeof(int)*Size);"
+    ptr=new int[Size];      //As there is Malloc function in c programming in cpp there is new function 
+                           //which is used to allocate memory..... 
+                          //Crogramming syntax for same operation "ptr=(int*)malloc(sizeof(int)*Size);"
 
     if(ptr== NULL)
         {
