@@ -143,45 +143,104 @@ float CircleArea()
 int main() //Entry point Function
 {
     int No1=0;
-    cout<<"Enter 1 To find Area of Rectangle"<<"\n";
-    cout<<"Enter 2 To find Area of Square"<<"\n";
-    cout<<"Enter 3 To find Area of Circle"<<"\n";
-    cout<<"Enter 4 To find Perimeter of Rectangle"<<"\n";
-    cout<<"Enter 5 To find Perimeter of Square"<<"\n";
-    cout<<"Enter 6 To find Perimeter of Circle"<<"\n";
+    cout<<"Enter 1 To Perform operation on Rectangle shape"<<"\n";
+    cout<<"Enter 2 To Perform operation on Square shape"<<"\n";
+    cout<<"Enter 3  To Perform operation on Circle shape"<<"\n";
     
     cin>>No1;  //Accepting the Number of Operation User wants to perform
 
     switch (No1)
-    {
+    {   
+        
         case 1:
-            RectArea();     //Calling Function RectArea()
-        break;
-            
+                int ino1;
+                cout<<"Enter 1 To find Area of Rectangle"<<"\n";
+                cout<<"Enter 2 To find Perimeter of Rectangle"<<"\n";
+                
+                cin>>ino1;
+
+                switch (ino1)
+                {
+                    case 1:
+                            RectArea();  
+                            abort();
+                    break;
+
+                    
+                    case 2:
+                        RectPerimeter();
+                        abort(); 
+                    break;
+
+
+                    default:
+                        cout<<"!!!!!!!!! Invalid Input !!!!!!!!!"<<"\n";                
+                        abort();
+                    break;
+                
+                }
+
+
         case 2:
-            SquareArea();   //Calling Function SquareArea()
-        break;
+                int ino2;            
+                cout<<"Enter 1 To find Area of Square"<<"\n";
+                cout<<"Enter 2 To find Perimeter of Square"<<"\n";
+
+                cin>>ino2;
+
+                switch (ino2)
+                {
+                    case 1:
+                            SquareArea(); 
+                            abort();
+                    break;
+
+
+                    case 2:
+                        SquarePerimeter();
+                        abort(); 
+                    break;
+
+
+                    default:
+                        cout<<"!!!!!!!!! Invalid Input !!!!!!!!!"<<"\n";
+                    break;
+                    abort();
+                }
+
 
         case 3:
-            CircleArea();//Calling Function CircleArea()
-        break;
-
-        case 4:
-            RectPerimeter();//Calling Function RectPerimeter()
-        break;
+                int ino3;  
+                cout<<"Enter 1 To find Area of Circle"<<"\n";
+                cout<<"Enter 2 To find Perimeter of Circle"<<"\n";
             
-        case 5:
-            SquarePerimeter();//Calling Function SquarePerimeter()
-        break;
+                cin>>ino3;
 
-        case 6:
-            CirclePerimeter();//Calling Function Circleperimeter()
-        break;
+                switch (ino3)
+                {
+                    case 1 :
+                            CircleArea();  
+                            abort();
+                    break;
+                    
+                    
+                    case 2 :
+                        CirclePerimeter(); 
+                        abort();  
+                    break;
+
+
+                    default:
+                        cout<<"!!!!!!!!! Invalid Input !!!!!!!!!"<<"\n";
+                        abort();
+                    break;
+                }
 
         default: //Default Statement
-        cout<<"You have entered invalid choice"<<"\n";
+            cout<<"!!!!!! invalid choice  !!!!!!"<<"\n";
+            abort();
         break;
     }
-   
+    
    return 0;
 }
